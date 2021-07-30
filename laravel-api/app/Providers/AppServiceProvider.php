@@ -25,7 +25,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        // this is for what?
+        // this is for what? is it for make default size of database?
+        
         Schema::defaultStringLength(191);
     }
 }
