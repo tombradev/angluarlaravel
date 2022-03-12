@@ -14,4 +14,8 @@ class EmployeeController extends Controller
         return response()->json(Employee::all(),200);
 
     }
+
+    public function getEmployeeById($id){
+        $employee = Employee::find($id);
+    }
 }
